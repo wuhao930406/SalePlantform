@@ -1,0 +1,416 @@
+/*result css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul ,li,dl,dd,dt{
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body{
+    padding-bottom: 84px;
+}
+/*result css*/
+
+/*public css-start*/
+.lighter{
+    font-weight: lighter;
+}
+.bold{
+    font-weight: 600;
+}
+.bolder{
+    font-weight: bold;
+}
+.padding0{
+    padding: 12px;
+}
+.padding1{
+    padding: 16px;
+}
+.padding2{
+    padding: 18px;
+}
+.margin0{
+    margin: 12px;
+}
+.margin1{
+    margin: 16px;
+}
+.margin2{
+    margin: 18px;
+}
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-row-center{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+}
+.flex-row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-column-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*public css-end*/
+
+/*index.html  css-start*/
+.header{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}
+.header>img{
+    width: 100%;
+    height: auto;
+}
+.header .header_title{
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    top:0
+}
+.header .header_title p{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color:#333
+}
+.header .searchbox{
+    width:90%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.header .searchbox input{
+    flex:1;
+    text-align: left;
+    color: #666666;
+    cursor: inherit;
+    margin-right: 1rem;
+}
+.navbar{
+    width:100%;
+    margin-top: 12px;
+}
+.navbar a{
+    width:33.3%;
+    height:120px;
+}
+.navbar .img{
+    width:50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.navbar p{
+    color:#333;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-top: 8px;
+}
+.line{
+    margin: 10px 0px;
+    padding: 6px;
+    background-color: #ffffff;
+}
+.line img{
+    width: 22px;
+    height: auto;
+}
+.line h2{
+    display: block;
+    width:80px;
+    text-align: center;
+    font-size: 1.8rem;
+    color:#5b82e9;
+}
+.line p{
+    font-size: 1.6rem;
+    color:#333;
+    padding-left: 6px;
+    flex:1;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    box-shadow: 0 -3px 3px #ddd;
+}
+.footer li{
+    flex:1;
+}
+.footer li:first-child{
+    border-right: #f9f9f9 solid 1px;
+}
+.footer li div.bacimg{
+    width:24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.footer li p{
+    color:#999999;
+    font-size: 1.6rem;
+}
+.footer li.cur p{
+    color:#5b82e9;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
