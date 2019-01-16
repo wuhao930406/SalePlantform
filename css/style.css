@@ -57,6 +57,9 @@ body{
 input{
     min-width: 0px;
 }
+#searchtext{
+    border:#5b82e9 solid 1px;
+}
 /*result css*/
 
 /*public css-start*/
@@ -283,7 +286,7 @@ input{
     padding: 38px 0px 0px 0px;
 }
 .content div{
-    width:74%;
+    width:88%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -301,9 +304,9 @@ input{
     color:#333
 }
 
-/*----------questions-----------*/
+/*----------questions&&stipulate-----------*/
 .diylist{
-    width:74%;
+    width:88%;
     margin:8px auto;
 }
 .diylist ul li{
@@ -341,7 +344,7 @@ input{
     border-top: none !important;
 }
 .pagenation{
-    width:80%;
+    width:88%;
     padding:12px 0px 28px 0px;
     position: fixed;
     bottom: 0px;
@@ -380,15 +383,107 @@ input{
 .pagenation ul li p{
     line-height: 20px;
 }
+/*--------------periodicals------------*/
+.selectbox{
+    overflow: visible;
+    width:88%;
+    margin: 12px auto;
+    position: relative;
+}
+.selectbox button+select+.am-selected{
+    margin: 0 10px;
+}
+/*reset select*/
+.am-btn-default.am-active, .am-btn-default:active, .am-dropdown.am-active .am-btn-default.am-dropdown-toggle {
+    background-image: none;
+    background-color: transparent;
+}
+.am-btn-default.am-active, .am-btn-default:active, .am-btn-default:focus, .am-btn-default:hover, .am-dropdown.am-active .am-btn-default.am-dropdown-toggle {
+    color: #5b82e9;
+    border-color: #5b82e9;
+}
+.selectbox .am-btn-default {
+    color: #5b82e9;
+    background-color: transparent;
+    border-color: #5b82e9;
+}
+.am-selected-status {
+    min-height: 20px;
+}
+.diybtn{
+    background-color: transparent;
+    border:#5b82e9 solid 1px;
+    color: #5b82e9;
+}
+.diybtn:hover{
+    background-color: transparent;
+    border:#5b82e9 solid 1px;
+    color: #2d60e9;
+}
+.diybtncur{
+    background-color: #5b82e9;
+    border:#5b82e9 solid 1px;
+    color: #ffffff;
+}
+.perlist{
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.perlist .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    border: #5b82e9 solid 1px;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+}
+.perlist .item .left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.perlist .item .left h2{
+    font-size: 18px;
+    color: #5b82e9;
+}
+.perlist .item .left p{
+    font-size: 16px;
+    color: #333;
+}
 
-
-
-
-
-
-
-
-
+.perlist .item .body{
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.perlist .item .body p{
+    font-size: 14px;
+    color: #333;
+}
+.perlist .item .right{
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    background-color: #5b82e9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perlist .item .right img{
+    width: 10px;
+}
+#nextPage{
+    width:68%;
+    display: block;
+    margin: 0 auto;
+}
 
 
 

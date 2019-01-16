@@ -4,9 +4,16 @@ SalePlantform with jQuery
       js文件单独引用，文件名与html对应    
 
 html文件及目录说明：  
-./index.html - 首页  
+./index.html - 首页
+
+./html/homepage/periodicals.html - 首页-中文期刊
+
+
+
+
+
 ./html/percenter/percenter.html - 个人中心  
 ./html/percenter/stipulate.html - 个人中心-公司规定  
-./html/percenter/questions.html - 常见问题  
+./html/percenter/questions.html - 个人中心-常见问题
 
 
