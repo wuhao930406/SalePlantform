@@ -8,7 +8,6 @@ $("#search").click(function(){
         alerttext = "请输入搜索内容"
     $("#alerttitle").text(alerttitle);
     $("#alerttext").text(alerttext);
-
     if(!value||value==""){
         $("#my-alert").modal();
     }

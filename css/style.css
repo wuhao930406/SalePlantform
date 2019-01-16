@@ -47,6 +47,13 @@ body{
     padding-bottom: 84px;
     background-color: #f9f9f9
 }
+.oneline{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:100%;
+    display: block;
+}
 /*result css*/
 
 /*public css-start*/
@@ -262,19 +269,114 @@ body{
 }
 
 
+/*----------个人中心----------*/
+.content{
+    overflow: hidden;
+}
+.content>p.bold{
+    text-align: center;
+    color:#5b82e9;
+    font-size: 16px;
+    padding: 38px 0px 0px 0px;
+}
+.content div{
+    width:74%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content div a{
+    padding: 38px 0 12px 14px;
+    border-bottom:#5b82e9 solid 1px;
+}
+.content div a img{
+    width:32px;
+    height: auto;
+    margin-right: 18px;
+}
+.content div a p{
+    font-size: 16px;
+    color:#333
+}
 
+/*----------questions-----------*/
+.diylist{
+    width:74%;
+    margin:8px auto;
+}
+.diylist ul li{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 16px;
+}
+.diylist ul li i{
+    display: block;
+    width: 20px !important;
+    height: 20px;
+    margin: 0 14px;
+    background-color: #5b82e9;
+    color:#fff;
+    border-radius: 50%;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+}
+.diylist ul li a{
+    flex:1;
+    color: #333333;
+    margin-right: 12px;
+}
+.diylist ul li img{
+    width: 7px;
+    margin: 0px 12px 0px 0px
+ }
+.am-list > li:first-child{
+    border-top: none !important;
+}
+.pagenation{
+    width:80%;
+    padding:12px 0px 28px 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right:0;
+    margin: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagenation>div{
+    width:28px;
+    height: 28px;
+    background-color: #5b82e9;
+    border-radius: 6px;
+}
+.pagenation ul li{
+    width:28px;
+    height: 28px;
+    border: #5b82e9 solid 1px;
+    border-radius: 6px;
+    margin: 0 4px;
+    color: #5b82e9;
+}
 
+.pagenation ul li.current{
+    width:28px;
+    height: 28px;
+    background-color: #5b82e9;
+    border-radius: 6px;
+    margin: 0 4px;
+    color: #ffffff;
+}
 
-
-
-
-
-
-
-
-
-
-
+.pagenation ul li p{
+    line-height: 20px;
+}
 
 
 
