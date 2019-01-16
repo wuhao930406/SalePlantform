@@ -45,6 +45,7 @@ html,body{
 }
 body{
     padding-bottom: 84px;
+    background-color: #f9f9f9
 }
 /*result css*/
 
@@ -209,7 +210,7 @@ body{
 }
 
 
-.line .rollbox p{
+.line .rollbox a{
     font-size: 1.6rem;
     color:#333;
     display: block;
@@ -226,27 +227,27 @@ body{
     background-color: #ffffff;
     box-shadow: 0 -3px 3px #ddd;
 }
-.footer li{
+.footer a{
     flex:1;
 }
-.footer li:first-child{
+.footer a:first-child{
     border-right: #f9f9f9 solid 1px;
 }
-.footer li div.bacimg{
+.footer a div.bacimg{
     width:18px;
     height: 18px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.footer li p{
+.footer a p{
     color:#999999;
     font-size: 1.6rem;
     display: block;
     height: 1.6rem;
     margin-bottom: 6px;
 }
-.footer li.cur p{
+.footer a.cur p{
     color:#5b82e9;
     font-size: 1.6rem;
 }
