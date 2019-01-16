@@ -12,7 +12,16 @@ $("#search").click(function(){
     if(!value||value==""){
         $("#my-alert").modal();
     }
-
-
-
 })
+/*-------------滚动轮播------------*/
+var t = setInterval(function(){
+    $("#roll1").animate({marginTop:-25},400,function(){
+        $("#roll1 p:last-child").after($("#roll1 p:first-child"));
+        $("#roll1").css({marginTop:0})
+    })
+    $("#roll2").animate({marginTop:-25},400,function(){
+        $("#roll2 p:last-child").after($("#roll2 p:first-child"));
+        $("#roll2").css({marginTop:0})
+    })
+},2400)
+
