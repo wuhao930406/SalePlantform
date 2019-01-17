@@ -417,11 +417,8 @@ input{
     background-color: transparent;
     border:#5b82e9 solid 1px;
     color: #5b82e9;
-}
-.diybtn:hover{
-    background-color: transparent;
-    border:#5b82e9 solid 1px;
-    color: #2d60e9;
+    min-width:88px;
+    border-radius: 4px;
 }
 .diybtncur{
     background-color: #5b82e9;

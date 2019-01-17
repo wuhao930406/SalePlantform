@@ -6,7 +6,6 @@ $('.level').trigger('changed.selected.amui');
 $('.time').trigger('changed.selected.amui');
 /*点击全部重置select*/
 $("#diybtn").click(function(){
-    $(this).addClass("diybtncur");
     /*reset data*/
     $('.level').find('option').eq(0).attr('selected', true).trigger('changed.selected.amui');
     $('.level').next(".am-selected").find(".am-selected-content").find(".am-selected-list").find("li").removeClass("am-checked");
@@ -21,7 +20,7 @@ $("#diybtn").click(function(){
     $('.level').val("");//设置为空
     $('.time').val("");//设置为空
 
-    console.log($('.level').val()+":"+$('.time').val())
+    $("#diybtn").addClass("diybtncur");
 
 })
 /*监听select事件 修改-1为null*/
