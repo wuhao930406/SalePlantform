@@ -75,6 +75,9 @@ input{
 .padding0{
     padding: 12px;
 }
+.padding0s{
+    padding: 12px 0px;
+}
 .padding1{
     padding: 16px;
 }
