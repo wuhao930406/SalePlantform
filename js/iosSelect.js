@@ -1256,6 +1256,7 @@
 				'</section>',
 				'<hr class="cover-area1"/>',
 				'<hr class="cover-area2"/>',
+				'<hr class="cover-area3" style="display:none"/>',
 				'<div class="ios-select-loading-box" id="iosSelectLoadingBox">',
 				    '<div class="ios-select-loading"></div>',
 				'</div>'

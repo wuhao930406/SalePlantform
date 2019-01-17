@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui,target-densitydpi=72">
+    <title>销售赋能平台-SCI方案</title>
+    <link rel="stylesheet" href="../../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+    <div data-am-sticky style="background-color:#f9f9f9">
+        <!--顶部搜索-->
+        <div class="header"style="height: 80px">
+            <div class="searchbox flex-row-center padding0" style="flex-wrap: nowrap;padding: 4px;bottom: 6px">
+                <img src="../../images/return.png" onclick="javascript:window.history.go(-1);" style="width:42px;margin-right: 10px" alt=""/>
+                <input class="am-btn" type="text" id="searchtext" placeholder="投稿方向/期刊名称">
+                <button class="am-btn am-btn-primary" id="search">
+                    <img src="../../images/search.png" style="width:14px;" alt=""/>
+                    搜索
+                </button>
+            </div>
+        </div>
+        <!--3个选择框-->
+        <div class="selectbox flex-row-between" style="flex-wrap: nowrap;">
+                <button class="diybtn diybtncur" id="diybtn" style="height: 42.8px">
+                                          全部
+                </button>
+                <input onclick="SelectInit(this,'选择分值')" style="max-width: 48px;margin-left: 6px;" class="am-btn" type="button" value="分值" id='level'/>
+                <input onclick="SelectInit(this,'选择大类学科')" style="margin-left: 6px;" class="am-btn" type="button" value="大类学科" id='time'/>
+                <input onclick="SelectInit(this,'选择小类学科')" style="margin-left: 6px;" class="am-btn" type="button" value="小类学科" id='time'/>
+            </div>
+        </div>
+        <!--长列表-->
+        <div class="perlist">
+            <li class="item" onclick="jumpUrl('./SCISolutiondetail.html')">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+               <li class="item">
+                <div class="left" style="max-width: 48%;">
+                    <h2>科室方向:消化内科</h2>
+                    <p>研究方向:溃疡性肠炎</p>
+                    <div class="stararr">
+                    	<span>难易程度: </span>
+                    	<i></i>
+                    	<i></i>
+                    	<i></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>分值：<span>0-5分</span></p>
+                </div>
+                <div class="right">
+                    <img src="../../images/rightarr.png" alt="">
+                </div>
+            </li>
+            
+         
+        </div>
+        
+        <!--list 分页-->
+	    <div class="pagenation">
+	        <div class="flex-column-center">
+	            <img src="../../images/leftarr.png" style="width: 8px;" alt=""/>
+	        </div>
+	        <ul class="flex-row-start">
+	            <li class="flex-column-center current">
+	                <p>1</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>2</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>3</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>4</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>5</p>
+	            </li>
+	        </ul>
+	        <div class="flex-column-center">
+	            <img src="../../images/rightarr.png" style="width: 8px;" alt=""/>
+	        </div>
+	    </div>
+	    
+        <!--alert 模态框-->
+        <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd" id="alerttitle">
+                    Amaze UI
+                </div>
+                <div class="am-modal-bd" id="alerttext">
+                    Hello world！
+                </div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn">确定</span>
+                </div>
+            </div>
+        </div>
+        <!--select 选择框-->
+        <div class="container"></div>
+        
+</body>
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/amazeui.min.js"></script>
+<script src="../../js/iosSelect.js"></script>
+<script src="../../js/public.js"></script>
+<script src="../../js/SCISolution.js"></script>
+</html>

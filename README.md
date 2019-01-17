@@ -7,9 +7,9 @@ html文件及目录说明：
 ./index.html - 首页
 
 ./html/homepage/periodicals.html - 首页-中文期刊  
-./html/homepage/transfer.html - 首页-转让信息  
-
-
+./html/homepage/transfer.html - 首页-转让信息   
+./html/homepage/SCI.html - 首页-SCI   
+./html/homepage/SCISolution.html - 首页-SCI方案 
 
 
 ./html/percenter/percenter.html - 个人中心  

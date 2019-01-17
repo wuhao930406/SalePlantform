@@ -16,3 +16,5 @@ $("#search").click(function(){
 function jumpUrl(url){
     window.location.href = url
 }
+/*------------设置下拉选择框的显示个数-----------*/
+window.num = 5; //个数：1 3 5 7 9 ....
