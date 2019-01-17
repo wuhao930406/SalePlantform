@@ -6,8 +6,8 @@ SalePlantform with jQuery
 html文件及目录说明：  
 ./index.html - 首页
 
-./html/homepage/periodicals.html - 首页-中文期刊
-
+./html/homepage/periodicals.html - 首页-中文期刊  
+./html/homepage/transfer.html - 首页-转让信息  
 
 
 

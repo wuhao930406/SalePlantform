@@ -66,7 +66,6 @@ function SelectInit(obj,title) {
         itemShowCount: 3,//显示个数
         oneLevelId: Id,
         callback: function (selectOneObj) {
-        	 $("#diybtn").removeClass("diybtncur");
         	showDom.val(selectOneObj.value);//选择后修改按钮文字
         	showDom.attr("name",selectOneObj.id);//修改按钮存储的id值
             /*----修改后执行的操作写在下面----*/
@@ -90,10 +89,10 @@ function refreshData(selectOneObj){
 /*点击全部重置select*/
 $("#diybtn").click(function(){
     /*reset data*/
-    $('#level').val("期刊级别");
-    $('#level').attr("name",null);
-   	$('#time').val("发刊周期");
-    $('#time').attr("name",null);
+    $('.level').val("期刊级别");
+    $('.level').attr("name",null);
+   	$('.time').val("发刊周期");
+    $('.time').attr("name",null);
     $("#diybtn").addClass("diybtncur");
     /*----修改后执行的操作写在下面----*/
     refreshData(null)
@@ -102,14 +101,4 @@ $("#diybtn").click(function(){
 })
 
 
-
-/*加载更多*/
-function loadMore(obj){
-    var html = $(".perlist .item").html();
-        html = '<li class="item">'+html+'</li>';
-    $(".perlist").append(html)
-
-
-
-}
 
