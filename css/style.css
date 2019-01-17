@@ -446,14 +446,25 @@ input{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 132px;
 }
 .perlist .item .left h2{
     font-size: 18px;
     color: #5b82e9;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
 }
 .perlist .item .left p{
     font-size: 16px;
     color: #333;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .perlist .item .body{
@@ -465,6 +476,7 @@ input{
 .perlist .item .body p{
     font-size: 14px;
     color: #333;
+    margin-left: 10px;
 }
 .perlist .item .right{
     margin-left: 10px;
