@@ -178,9 +178,9 @@ function SelectTime(starta,startb,enda,endb,title){
 			    $("#alerttext").text(alerttext);
 			    $("#alerttext").removeAttr("name");
 		        $("#my-alert").modal();
+           		$("#time").val(selectOneObj.value+"."+selectTwoObj.value+"-"+selectOneObjs.value+"."+selectTwoObjs.value)
+		        
            	}
-           
-           
            	
            
             refreshData(selectOneObj, selectTwoObj,selectOneObjs, selectTwoObjs)
@@ -208,10 +208,19 @@ function ifOpen(){
 /*点击全部重置select*/
 $("#diybtn").click(function(){
     /*reset data*/
-    $('.level').val("期刊级别");
-    $('.level').attr("name",null);
-   	$('.time').val("发刊周期");
-    $('.time').attr("name",null);
+    $('#type').val("类型");
+    $('#type').attr("name",null);
+    
+    $('#time').val("时间");
+    $('#time').attr("name",null);
+    
+    $('#level').val("级别");
+    $('#level').attr("name",null);
+    
+    $('#derection').val("方向");
+    $('#derection').attr("name",null);
+    
+   
     $("#diybtn").addClass("diybtncur");
     /*----修改后执行的操作写在下面----*/
     refreshData(null)

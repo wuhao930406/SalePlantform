@@ -90,10 +90,15 @@ function refreshData(selectOneObj){
 /*点击全部重置select*/
 $("#diybtn").click(function(){
     /*reset data*/
-    $('#level').val("期刊级别");
-    $('#level').attr("name",null);
-   	$('#time').val("发刊周期");
-    $('#time').attr("name",null);
+    $('#core').val("分值");
+    $('#core').attr("name",null);
+   	$('#big').val("大类学科");
+    $('#big').attr("name",null);
+    $('#small').val("小类学科");
+    $('#small').attr("name",null);
+    
+    
+    
     $("#diybtn").addClass("diybtncur");
     /*----修改后执行的操作写在下面----*/
     refreshData(null)
