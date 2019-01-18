@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="../../css/style.css"/>
 </head>
 <body>
-    <!--顶部搜索-->
-    <div class="header">
-        <img src="../../images/banner.jpg" alt=""/>
-        <div class="searchbox flex-row-center padding0s" style="flex-wrap: nowrap">
-            <img src="../../images/return.png" onclick="javascript:window.history.go(-1);" style="width:42px;margin-right: 10px" alt=""/>
-            <input class="am-btn" type="text" id="searchtext" placeholder="投稿方向/期刊名称">
-            <button class="am-btn am-btn-primary" id="search">
-                <img src="../../images/search.png" style="width:14px;" alt=""/>
-                搜索
-            </button>
-        </div>
+	<div data-am-sticky style="background-color:#f9f9f9">
+	    <!--顶部搜索-->
+	    <div class="header">
+	        <img src="../../images/banner.jpg" alt=""/>
+	        <div class="searchbox flex-row-center padding0s" style="flex-wrap: nowrap">
+	            <img src="../../images/return.png" onclick="javascript:window.history.go(-1);" style="width:42px;margin-right: 10px" alt=""/>
+	            <input class="am-btn" type="text" id="searchtext" placeholder="投稿方向/期刊名称">
+	            <button class="am-btn am-btn-primary" id="search">
+	                <img src="../../images/search.png" style="width:14px;" alt=""/>
+	                搜索
+	            </button>
+	        </div>
+	    </div>
     </div>
     <!--list 集合 跳转推荐使用onclick-->
     <div class="am-list-news-bd diylist">
@@ -54,6 +56,21 @@
                 <img src="../../images/rightarrblack.png"  alt=""/>
             </li>
             <li class="am-g">
+                <img src="../../images/s_icon.png" alt=""/>
+                <a class="am-list-item-hd oneline">我最喜欢的一张画</a>
+                <img src="../../images/rightarrblack.png"  alt=""/>
+            </li>
+          	<li class="am-g">
+                <img src="../../images/s_icon.png" alt=""/>
+                <a class="am-list-item-hd oneline">我最喜欢的一张画</a>
+                <img src="../../images/rightarrblack.png"  alt=""/>
+            </li>
+          	<li class="am-g">
+                <img src="../../images/s_icon.png" alt=""/>
+                <a class="am-list-item-hd oneline">我最喜欢的一张画</a>
+                <img src="../../images/rightarrblack.png"  alt=""/>
+            </li>
+          	<li class="am-g">
                 <img src="../../images/s_icon.png" alt=""/>
                 <a class="am-list-item-hd oneline">我最喜欢的一张画</a>
                 <img src="../../images/rightarrblack.png"  alt=""/>
@@ -100,8 +117,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../js/amazeui.min.js"></script>

@@ -22,11 +22,15 @@
         </div>
         <!--3个选择框-->
         <div class="selectbox flex-row-between" style="flex-wrap: nowrap;">
-                <button class="diybtn diybtncur" id="diybtn" style="height: 42.8px;min-width:88px;">
-                    全部
+                <button class="diybtn diybtncur" style="height: 42.8px;flex:1">
+                    	中文期刊
                 </button>
-                <input onclick="SelectInit(this,'选择期刊级别')" class="am-btn" type="button" value="期刊级别" id='level'/>
-                <input onclick="SelectInit(this,'选择发刊周期')" class="am-btn" type="button" value="发刊周期" id='time'/>
+                 <button class="diybtn" style="height: 42.8px;flex:1;margin: 0 10px;">
+                    	SCI
+                </button>
+                 <button class="diybtn" style="height: 42.8px;flex:1">
+                    	转让信息
+                </button>
             </div>
         </div>
         <!--长列表-->
@@ -162,29 +166,37 @@
                 </div>
             </li>
         </div>
-        <button type="button" id="nextPage" class="am-btn am-btn-primary am-radius" onclick="loadMore(this)">下一页</button>
-
-        <!--alert 模态框-->
-        <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
-            <div class="am-modal-dialog">
-                <div class="am-modal-hd" id="alerttitle">
-                    Amaze UI
-                </div>
-                <div class="am-modal-bd" id="alerttext">
-                    Hello world！
-                </div>
-                <div class="am-modal-footer">
-                    <span class="am-modal-btn">确定</span>
-                </div>
-            </div>
-        </div>
-        <!--select 选择框-->
-        <div class="container"></div>
+        <!--list 分页-->
+	    <div class="pagenation">
+	        <div class="flex-column-center">
+	            <img src="../../images/leftarr.png" style="width: 8px;" alt=""/>
+	        </div>
+	        <ul class="flex-row-start">
+	            <li class="flex-column-center current">
+	                <p>1</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>2</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>3</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>4</p>
+	            </li>
+	            <li class="flex-column-center">
+	                <p>5</p>
+	            </li>
+	        </ul>
+	        <div class="flex-column-center">
+	            <img src="../../images/rightarr.png" style="width: 8px;" alt=""/>
+	        </div>
+	    </div>
         
 </body>
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../js/amazeui.min.js"></script>
 <script src="../../js/iosSelect.js"></script>
 <script src="../../js/public.js"></script>
-<script src="../../js/periodicals.js"></script>
+<script src="../../js/result.js"></script>
 </html>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui,target-densitydpi=72">
-    <title>销售赋能平台-转让信息</title>
+    <title>销售赋能平台-中文期刊</title>
     <link rel="stylesheet" href="../../css/amazeui.min.css"/>
     <link rel="stylesheet" href="../../css/style.css"/>
 </head>
 <body>
-    <div data-am-sticky style="background-color:#f9f9f9">
+    <div data-am-sticky style="background-color:#f9f9f9" 
         <!--顶部搜索-->
         <div class="header"style="height: 80px">
             <div class="searchbox flex-row-center padding0" style="flex-wrap: nowrap;padding: 4px;bottom: 6px">
@@ -20,16 +20,29 @@
                 </button>
             </div>
         </div>
-      	<div class="jumpbtns flex-column-around">
-      		<a href="./SCISolution.html" class="flex-row-between">
-      			<p>SCI方案</p>
-      			<img src="../../images/rightarrblack.png" alt="" />
-      		</a>
-      		<a href="SCICasedetail.html" class="flex-row-between">
-      			<p>SCI案例</p>
-      			<img src="../../images/rightarrblack.png" alt="" />
-      		</a>
-      	</div>
+        <!--3个选择框-->
+        <div class="selectbox flex-row-between" style="flex-wrap: nowrap;">
+                <button class="diybtn diybtncur" style="height: 42.8px;flex:1">
+                    	中文期刊
+                </button>
+                 <button class="diybtn" style="height: 42.8px;flex:1;margin: 0 10px;">
+                    	SCI
+                </button>
+                 <button class="diybtn" style="height: 42.8px;flex:1">
+                    	转让信息
+                </button>
+            </div>
+        </div>
+    <!--长列表-->
+    <div class="noresult">
+    	<img src="../../images/noresult.png"/>
+    </div> 
+       
         
 </body>
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/amazeui.min.js"></script>
+<script src="../../js/iosSelect.js"></script>
+<script src="../../js/public.js"></script>
+<script src="../../js/result.js"></script>
 </html>

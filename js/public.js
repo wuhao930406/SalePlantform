@@ -10,8 +10,33 @@ $("#search").click(function(){
     $("#alerttext").text(alerttext);
     if(!value||value==""){
         $("#my-alert").modal();
+    }else if(value=="0"){//跳转到无结果页面
+    	var ifs = $(".header").attr("name");
+    	if(ifs){
+    		jumpUrl("./html/searchresult/noresult.html");
+    	}else{
+    		jumpUrl("../searchresult/noresult.html");
+    	}
+    	sessionStorage.setItem("val",value);//模拟数据传参
+    }else{//跳转到结果页面
+    	var ifs = $(".header").attr("name");
+    	if(ifs){
+    		jumpUrl("./html/searchresult/result.html");
+    	}else{
+    		jumpUrl("../searchresult/result.html");
+    	}
+    	sessionStorage.setItem("val",value);//模拟数据传参
     }
 })
+$(document).ready(function(){
+	var val = sessionStorage.getItem("val");
+	if(val){
+		$("#searchtext").val(val)
+	}
+	
+})
+
+
 /*----------------------页面跳转-------------------------*/
 function jumpUrl(url){
     window.location.href = url

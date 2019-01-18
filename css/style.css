@@ -625,7 +625,7 @@ input{
 /*----------questions&&stipulate-----------*/
 .diylist{
     width:88%;
-    margin:8px auto;
+    margin:0px auto;
 }
 .diylist ul li{
     background-color: transparent;
@@ -954,6 +954,13 @@ input{
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+.noresult{
+	width: 48%;
+	margin: 88px auto 0 auto;
+}
+.noresult img{
+	width: 100%;
 }
 
 
