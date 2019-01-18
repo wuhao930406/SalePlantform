@@ -6,14 +6,20 @@ SalePlantform with jQuery
 html文件及目录说明：  
 ./index.html - 首页
 
-./html/homepage/periodicals.html - 首页-中文期刊  
-./html/homepage/transfer.html - 首页-转让信息   
-./html/homepage/SCI.html - 首页-SCI   
-./html/homepage/SCISolution.html - 首页-SCI方案 
+./html/homepage/periodicals.html - 首页-中文期刊        
+./html/homepage/periodicalsdetail.html - 首页-中文期刊详情   
+
+./html/homepage/transfer.html - 首页-转让信息      
+./html/homepage/transferdetail.html - 首页-转让信息详情      
+ 
+./html/homepage/SCI.html - 首页-SCI     
+./html/homepage/SCISolution.html - 首页-SCI方案      
+./html/homepage/SCISolutiondetail.html - 首页-SCI方案详情    
+./html/homepage/SCICasedetail.html - 首页-SCI案例详情     
 
 
-./html/percenter/percenter.html - 个人中心  
-./html/percenter/stipulate.html - 个人中心-公司规定  
-./html/percenter/questions.html - 个人中心-常见问题
+./html/percenter/percenter.html - 个人中心   
+./html/percenter/stipulate.html - 个人中心-公司规定   
+./html/percenter/questions.html - 个人中心-常见问题 
 
 
