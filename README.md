@@ -4,7 +4,7 @@ SalePlantform with jQuery
       js文件单独引用，文件名与html对应    
 
 html文件及目录说明：  
-./index.html - 首页
+./index.html - 首页  
 ./html/homepage/customer.html - 首页-售后工作表 
 
 ./html/homepage/periodicals.html - 首页-中文期刊        
