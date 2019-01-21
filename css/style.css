@@ -822,6 +822,7 @@ input{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    flex:1
 }
 .perlist .item .body p{
     font-size: 14px;
