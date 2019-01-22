@@ -922,8 +922,12 @@ input{
 	width: 88%;
 	margin: 0 auto;
 	margin-top: 24px;
-	padding: 20px 0px;
+	padding: 20px;
 	box-shadow: 0px 2px 6px #999;
+}
+
+.public-content img{
+    max-width: 100%;
 }
 
 .public-content .row{
