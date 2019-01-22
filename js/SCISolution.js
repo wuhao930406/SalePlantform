@@ -81,10 +81,51 @@ function SelectInit(obj,title) {
 	})
 }
 /*修改后执行的操作*/
-function refreshData(selectOneObj){
-	console.log(selectOneObj)
+function refreshData(selectOneObj,selectTwoObj){
+	console.log(selectOneObj);
+    console.log(selectTwoObj);
 }
 
+/*------------选择分数----------------*/
+function SelectScore(score1,score2,title) {
+    setTimeout(function(){
+        $(".cover-area3").show();
+    },100)
+    var Dom1 = $(score1),
+        Dom2 = $(score2),
+        arr = [];
+    var Id1 = Dom1.attr("name"),//获取当前的id值1
+        Id2 = Dom2.attr("name");//获取当前的id值2
+    for(var i = 0;i<7;i++ ){
+        var item = {id:i,value:i}
+        arr.push(item);
+    }
+    var Select = new IosSelect(2,
+        [arr,arr],
+        {
+            container: '.container',//选择框渲染dom
+            title: title,
+            itemHeight: 50,//行高
+            itemShowCount: window.num,//显示个数
+            oneLevelId: Id1,
+            twoLevelId: Id2,
+            callback: function (selectOneObj,selectTwoObj) {
+                $("#diybtn").removeClass("diybtncur");
+                Dom1.val(selectOneObj.value);//选择后修改按钮文字
+                Dom1.attr("name",selectOneObj.id);//修改按钮存储的id值
+                Dom2.val(selectTwoObj.value);//选择后修改按钮文字
+                Dom2.attr("name",selectTwoObj.id);//修改按钮存储的id值
+                /*----修改后执行的操作写在下面----*/
+                refreshData(selectOneObj,selectTwoObj)
+            },
+            fallback: function () {
+                console.log(1);
+            },
+            maskCallback: function () {
+                console.log(2);
+            }
+        })
+}
 
 
 /*点击全部重置select*/

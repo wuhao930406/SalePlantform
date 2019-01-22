@@ -963,7 +963,22 @@ input{
 .noresult img{
 	width: 100%;
 }
-
+.teshu .select-two-level li {
+    text-align: center !important;
+    text-indent: 12px;
+}
+.teshu .ios-select-widget-box .cover-area3 {
+    width: 12px;
+    border: none;
+    border-top: 1px solid #5b82e9;
+    position: absolute;
+    top: 44px;
+    bottom: 0px;
+    margin: auto;
+    height: 0;
+    left: 0;
+    right: 0px !important;
+}
 
 
 

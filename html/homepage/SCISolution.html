@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/amazeui.min.css"/>
     <link rel="stylesheet" href="../../css/style.css"/>
 </head>
-<body>
+<body class="teshu">
     <div data-am-sticky style="background-color:#f9f9f9">
         <!--顶部搜索-->
         <div class="header"style="height: 80px">
@@ -23,9 +23,11 @@
         <!--3个选择框-->
         <div class="selectbox flex-row-between" style="flex-wrap: nowrap;">
                 <button class="diybtn diybtncur" id="diybtn" style="height: 42.8px">
-                                          全部
+                    全部
                 </button>
-                <input onclick="SelectInit(this,'选择分值')" style="max-width: 48px;margin-left: 6px;" class="am-btn" type="button" value="分值" id='core'/>
+                <input class="am-btn" type="hidden" value="" id='core1'/>
+                <input class="am-btn" type="hidden" value="" id='core2'/>
+                <input onclick="SelectScore('#core1','#core2','选择分值')" style="max-width: 48px;margin-left: 6px;" class="am-btn" type="button" value="分值" id='core'/>
                 <input onclick="SelectInit(this,'选择大类学科')" style="margin-left: 6px;" class="am-btn" type="button" value="大类学科" id='big'/>
                 <input onclick="SelectInit(this,'选择小类学科')" style="margin-left: 6px;" class="am-btn" type="button" value="小类学科" id='small'/>
             </div>
